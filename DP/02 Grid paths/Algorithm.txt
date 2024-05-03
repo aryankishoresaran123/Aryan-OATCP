@@ -1,0 +1,8 @@
+Algorithm
+1# We use a dynamic programming approach to solve this problem efficiently.
+2# We create a 2D DP array where dp[i][j] represents the number of paths to reach cell (i, j).
+3# We initialize the DP array based on whether the upper-left cell is empty or not.
+4# Then, we fill the DP array row by row from top to bottom and column by column from left to right.
+5# At each cell, if it's empty, we can reach it by adding the number of paths from the cell above and the cell to the left.
+6# If a cell contains a trap, we set the number of paths to reach it as 0.
+7# Finally, we output the number of paths to reach the lower-right cell, which is dp[n-1][n-1].

@@ -1,0 +1,7 @@
+Algorithm
+1# Initialize an array dp[] of size n+1 and set all elements to 0.
+2# Set dp[0] = 1 since there is one way to construct sum 0 (by not throwing the dice at all).
+3# Iterate through all possible sums from 1 to n.
+4# For each sum i, iterate through all possible outcomes of a dice throw (1 to 6).
+5# Update dp[i] by adding the number of ways to construct sum i from the previous throws (i.e., dp[i - j] for each outcome j from 1 to 6).
+6# Finally, return dp[n] which represents the number of ways to construct sum n.
