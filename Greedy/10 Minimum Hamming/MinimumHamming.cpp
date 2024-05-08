@@ -1,7 +1,3 @@
-/*
-Problem Name: Minimum Hamming
-Author: Vineet Motwani
-*/
 
 #include <bits/stdc++.h>
 using namespace std;
